@@ -16,9 +16,6 @@ body{
     margin: 0 auto;
 }
 
-header{
-  padding: 40px 4%;
-}
 
 header > .interface-header{
     display: flex;
@@ -81,39 +78,42 @@ h1 {
     padding: 60px 4%;
 }
 .avatar img {
-    width: 500px;
+    width: 400px;
     border-radius: 50%;
 }
 
 /* SOBRE */
 .sobre {
+    height: 100vh;
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 60px 4%;
     justify-content: space-evenly;
 }
 
 .foto-perfil {
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 35px;
     color: #8b390a;
     font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-size: 30px;
+    font-size: 25px;
     color: #8b390a;
     max-width: 600px;
     font-family: 'Poppins', sans-serif;
 }
 
+.texto-sobre p{
+    text-align: justify;
+}
 /* CERTIFICADOS */
 /* PROJETOS */
 /* FALE CMG */
