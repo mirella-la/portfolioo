@@ -27,7 +27,8 @@ body {
 
 /* HEADER */
 .interface-header{
-    width: 1280px;
+    width: 100%;
+    height: 100px;
     margin: 0;
     position: fixed; 
     top: 0;          
@@ -96,6 +97,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     padding: 60px 4%;
+    height: calc(100vh - 100px);
 }
 .avatar-container {
     position: relative;
@@ -147,7 +149,7 @@ h1 {
  
 /* SOBRE */
 .sobre {
-    height: 100vh;
+    height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     gap: 40px;
@@ -156,8 +158,8 @@ h1 {
 
 .foto-perfil {
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -180,9 +182,8 @@ p {
 
 /* PROJETOS */
 .projetos {
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100%;
-    padding: 20px 4%;
     text-align: center;
     margin-top: 100px;
 }
@@ -196,9 +197,9 @@ p {
 }
 
 .card {
-    height: 400px;
+    height: 50vh;
     border-radius: 20px;
-    width: 300px;
+    width: 30vw;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -206,9 +207,8 @@ p {
 }
 
 .card img {
- 
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     background-color: #fff;
@@ -241,7 +241,7 @@ p {
 
 /* CERTIFICADOS */
 .certificados {
-    height: 100vh;
+    height: calc(100vh - 100px);
     padding: 80px 4%;
     text-align: center;
 }
@@ -289,7 +289,7 @@ p {
 
 /* HABILIDADES */
 .habilidades {
-    height: 100vh;
+    height: calc(100vh - 100px);
     padding: 50px 4%;
     text-align: center;
 }
@@ -321,14 +321,22 @@ p {
 .skill img:hover{
     transform: scale(1.1)
 }
+
 /* CONTATO */
 .contato {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     align-items: center;
     justify-content: center;
-    padding: 80px 4%;
     text-align: center;
+}
+
+.talkwithme {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .contato h2{
@@ -358,12 +366,18 @@ footer {
     color: #fff29e;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     display: flex;
-    padding: 15px 0;
+    height: 40%;
 }
 
 footer p {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+}
+
+@media screen {max-width: 768px;
+    body{
+        width: 1rem;
+    }
 }
